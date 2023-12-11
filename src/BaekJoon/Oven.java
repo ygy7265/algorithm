@@ -1,11 +1,14 @@
 package BaekJoon;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
 
 public class Oven {
 
 
     public static void main(String[] args) {
+        HashMap<String,Integer> map = new LinkedHashMap<>();
         Scanner a = new Scanner(System.in);
         String input = a.nextLine();
         int cookMn = a.nextInt();
@@ -22,7 +25,7 @@ public class Oven {
                 time -= 24;
             }
         }
-        System.out.print(time+" "+mn);
+         System.out.print(time+" "+mn);
 
     }
 
