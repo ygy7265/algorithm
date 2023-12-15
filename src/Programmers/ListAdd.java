@@ -9,7 +9,7 @@ public class ListAdd {
         String a = "1";
         a.substring(2);
         List<Integer> list = new ArrayList();
-
+        a.toCharArray();
         int[] num_list;
         int n;
 
@@ -44,6 +44,19 @@ public class ListAdd {
             list.add(num_list[i]);
         }
         int[] answer = list.stream().mapToInt(i -> i).toArray();
+        return answer;
+    }
+
+    public String solution3(String my_string, String alp) {
+        String answer = "";
+        char[] myChar = my_string.toCharArray();
+        for(char my : myChar){
+            String myString = my+"";
+            if(myString.equals(alp)){
+                myString  = myString.toUpperCase();
+            }
+            answer += myString;
+        }
         return answer;
     }
 
