@@ -8,8 +8,10 @@ public class ListAdd {
     public static void main(String[] args) {
         int result = gcd(10,5);
         int result2 = lcm(10,2);
+        int result3 = lcm(10,2);
         System.out.println("gcd :" + result);
         System.out.println("gcd :" + result2);
+        System.out.println("gcd :" + result3);
     }
     static int gcd(int a, int b){
         if(b == 0)
